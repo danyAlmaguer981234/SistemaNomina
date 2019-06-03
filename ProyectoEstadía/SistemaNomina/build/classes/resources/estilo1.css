@@ -1,0 +1,202 @@
+
+.background{
+   -fx-background-image: url("logo.png");
+   -fx-background-position: center center;
+   -fx-background-repeat: stretch;   
+   -fx-background-color:  #2A363F;
+ 
+}
+
+.anchorPane{
+    -fx-background-image:url("logo.png");
+}
+
+.jfx-text-field, .jfx-password-field {
+   -fx-text-inner-color: white;
+  -fx-prompt-text-fill:  #2ECC71
+}
+.jfx-combo-box {
+     -fx-border-radius: 15 15 15 15;
+     -fx-background-radius: 15 15 15 15;
+     -fx-prompt-text-fill:  #2ECC71; 
+     -fx-text-inner-color: white;
+     -fx-text-fill: white;
+     
+}
+.date-picker  {
+    
+    -fx-border-radius: 15 15 15 15;
+    -fx-background-radius: 15 15 15 15;
+    -fx-text-fill: black;
+}
+
+.label-bright {
+    -fx-font-size: 11pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.label-header {
+    -fx-font-size: 32pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 1;
+}
+
+.table-view {
+    -fx-base: #93dae7;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-size: 40;
+    -fx-border-width: 0 0 2 0;
+    -fx-background-color: transparent;
+    -fx-border-color: 
+        transparent
+        transparent
+        derive(-fx-base, 70%) 
+        transparent;
+    -fx-border-insets: 0 10 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: black;
+    -fx-alignment: center-left;
+    -fx-opacity: 1;
+}
+
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #1d1d1d transparent #1d1d1d;
+    -fx-background-color: transparent, derive(#1d1d1d,20%);
+}
+
+.split-pane {
+    -fx-padding: 1 0 0 0;
+}
+
+.menu-bar {
+    -fx-background-color: derive(#1d1d1d,20%);
+}
+
+.context-menu {
+    -fx-background-color: derive(#1d1d1d,50%);
+}
+
+.menu-bar .label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Segoe UI Light";
+    -fx-text-fill: white;
+    -fx-opacity: 0.9;
+}
+
+.menu .left-container {
+    -fx-background-color: whitesmoke;
+}
+#txtaPersonaDomicilio{
+    -fx-opacity: 0.8;
+    -fx-font-size: 9pt;
+    -fx-font-family: "Segoe UI Semibold";
+}
+/* Codigo para editar la "TABPANE" */
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane
+{
+    -fx-tab-min-width:90px;
+}
+
+.tab{
+    -fx-background-insets: 0 1 0 1,0,0;
+}
+.tab-pane .tab
+{
+    -fx-background-color: #01475E;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-background-color: #025874;
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: whitesmoke;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.tab:selected .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: whitesmoke;
+}
+/* 
+ * Metro style Push Button
+ * Author: Pedro Duque Vieira
+ * http://pixelduke.wordpress.com/2012/10/23/jmetro-windows-8-controls-on-java/
+ */
+.button {
+    -fx-border-radius: 20 20 20 20;
+    -fx-background-radius: 20 20 20 20;
+    -fx-padding: 5 22 5 22;  
+    -fx-background-color: #2ECC71;
+    -fx-opacity: .9;
+    -fx-font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 10pt;
+    -fx-text-fill: whitesmoke;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+    
+   
+}
+
+.button:hover {
+    -fx-background-color:  #2A363F;
+    -fx-border-radius: 5,5,5,5;
+}
+
+.button:pressed, .button:default:hover:pressed {
+  -fx-background-color: #7DCEA0;
+  -fx-border-radius: 5,5,5,5;
+ 
+}
+
+.button:focused {
+  
+    -fx-border-radius: 5,5,5,5;
+    -fx-border-insets: 1 1 1 1, 0;
+    
+}
+
+.button:disabled, .button:default:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: #1d1d1d;
+    -fx-text-fill: white;
+    -fx-border-radius: 5,5,5,5;
+}
+
+.button:default {
+    -fx-background-color: -fx-focus-color;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 5,5,5,5;
+}
+
+.button:default:hover {
+    -fx-background-color: derive(-fx-focus-color,30%);
+    -fx-border-radius: 5,5,5,5;
+}

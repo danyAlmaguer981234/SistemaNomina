@@ -1,0 +1,19 @@
+
+
+.text-field:focused {
+    -fx-text-box-border:#FFFFFF;
+}
+
+.button
+{
+    -fx-border-radius: 4px;	
+}
+
+.text-field
+{
+	  -fx-prompt-text-fill: #465058;
+	  -fx-text-inner-color:#FBFCFC;
+	  -fx-font-size:15px;
+	  -fx-border-radius: 4px;
+
+}

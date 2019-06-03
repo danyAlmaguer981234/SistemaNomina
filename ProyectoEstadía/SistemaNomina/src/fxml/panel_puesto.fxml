@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="panelRaiz" prefHeight="676.0" prefWidth="885.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="pnlDatos" layoutX="14.0" layoutY="14.0" prefHeight="110.0" prefWidth="572.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+         <children>
+            <JFXTextField fx:id="txtIdPuesto" alignment="CENTER" editable="false" focusColor="#35cc10" labelFloat="true" layoutX="35.0" layoutY="51.0" prefHeight="25.0" prefWidth="172.0" promptText="CLAVE DEL PUESTO" stylesheets="@../resources/estilo1.css" unFocusColor="WHITE" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="51.0" />
+            <JFXTextField fx:id="txtNombrePuesto" alignment="CENTER" focusColor="#35cc10" labelFloat="true" layoutX="285.0" layoutY="52.0" prefHeight="25.0" prefWidth="172.0" promptText="NOMBRE DEL PUESTO" stylesheets="@../resources/estilo1.css" unFocusColor="#fffdfd" AnchorPane.leftAnchor="285.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="52.0" />
+            <JFXComboBox fx:id="cmbDepartamento" focusColor="WHITE" labelFloat="true" layoutX="519.0" layoutY="52.0" prefHeight="25.0" prefWidth="131.0" promptText="DEPARTAMENTO" style=": white;" stylesheets="@../resources/estilo1.css" unFocusColor="WHITE" visibleRowCount="20" AnchorPane.rightAnchor="207.0" />
+            <ImageView fitHeight="111.0" fitWidth="155.0" layoutX="708.0" layoutY="-47.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="-6.0" AnchorPane.topAnchor="-47.0">
+               <image>
+                  <Image url="@../resources/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlBotones" layoutX="14.0" layoutY="137.0" prefHeight="17.0" prefWidth="857.0" stylesheets="@../resources/estilo1.css" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <Button fx:id="btnGuardar" layoutX="14.0" layoutY="1.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" text="GUARDAR" textFill="#20697c" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="1.0">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnEliminar" layoutX="229.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="172.0" text="ELIMINAR" textFill="#20697c" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="229.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnNuevo" layoutX="440.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="172.0" stylesheets="@../resources/estilo1.css" text="NUEVO" textFill="#20697c" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="245.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="btnConsultar" layoutX="664.0" layoutY="-1.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="172.0" text="CONSULTAR" textFill="#20697c" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="-1.0">
+               <font>
+                  <Font name="Consolas Bold" size="14.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="28.0" fitWidth="31.0" layoutX="243.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/flat-style-circle-delete-trash_icon-icons.com_66945.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="28.0" layoutX="32.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/circle-edit-article_icon-icons.com_66938.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="454.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/flat-style-circle-add_icon-icons.com_66944.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="28.0" layoutX="683.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/flat-style-circle-redo_icon-icons.com_66947.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="pnlSala" layoutX="21.0" layoutY="186.0" prefHeight="411.0" prefWidth="857.0" style="-fx-background-image: logo.png;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="186.0">
+         <children>
+            <TableView fx:id="tblPuestos" layoutX="14.0" layoutY="55.0" prefHeight="223.0" prefWidth="543.0" style="-fx-background-color: #FAFAFA;" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="61.0" />
+            <AnchorPane fx:id="pnlDatosConsulta" layoutX="12.0" layoutY="6.0" prefHeight="43.0" prefWidth="821.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <TextField fx:id="txtRef" layoutY="9.0" prefHeight="28.0" prefWidth="663.0" stylesheets="@../resources/estilo1.css" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="157.0" AnchorPane.topAnchor="7.0" />
+                  <Button fx:id="btnBuscar" alignment="TOP_RIGHT" layoutX="757.0" layoutY="7.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="143.0" stylesheets="@../resources/estilo1.css" text="BUSCAR" AnchorPane.bottomAnchor="9.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="7.0">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="699.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/magnifier_icon-icons.com_49240.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <JFXCheckBox fx:id="chbActivo" layoutX="689.0" layoutY="-9.0" prefHeight="18.0" prefWidth="131.0" text="Consultar activos" textFill="#2ecc71" unCheckedColor="#fffdfd" AnchorPane.rightAnchor="37.0" />
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>

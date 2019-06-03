@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="885.0" style="-fx-background-color: #2A363F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane fx:id="pnlContenedorPrincipal" prefHeight="676.0" prefWidth="885.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="676.0" prefWidth="885.0" BorderPane.alignment="CENTER_RIGHT">
+               <children>
+                  <JFXButton fx:id="btnIngresar" buttonType="RAISED" defaultButton="true" graphicTextGap="7.0" layoutX="555.0" layoutY="423.0" prefHeight="53.0" prefWidth="250.0" ripplerFill="#20ff0a" style="-fx-background-color: #0AAEF0;" stylesheets="@Lgoin.css" text="INGRESAR" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXPasswordField fx:id="txtContrasenia" alignment="CENTER" focusColor="#fffa0a" labelFloat="true" layoutX="555.0" layoutY="330.0" prefHeight="25.0" prefWidth="248.0" promptText="CONTRASEÑA" stylesheets="@../resources/estilo1.css" unFocusColor="WHITE" />
+                  <JFXTextField fx:id="txtUsuario" alignment="CENTER" focusColor="#fffa0a" labelFloat="true" layoutX="555.0" layoutY="218.0" prefHeight="25.0" prefWidth="248.0" promptText="USUARIO" stylesheets="@../resources/estilo1.css" unFocusColor="WHITE" />
+                  <ImageView fitHeight="343.0" fitWidth="432.0" layoutX="43.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/logo.png" />
+                     </image>
+                  </ImageView>
+                  <Line endX="100.0" layoutX="586.0" layoutY="400.0" rotate="71.3" startX="-240.1806640625" startY="-115.191650390625" stroke="#fffefe" />
+                  <ImageView fx:id="imgSalir" accessibleRole="BUTTON" fitHeight="83.0" fitWidth="87.0" layoutX="781.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/salir.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="88.0" fitWidth="23.0" layoutX="555.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/1486564400-account_81513.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="114.0" fitWidth="26.0" layoutX="554.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resources/iconfinder-lock-4341303_120563.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
